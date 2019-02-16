@@ -8,7 +8,7 @@ RUN apt-get update -y && \
     apt-get install -qq -y php \
     zip unzip \
     composer \
-    openssh-client
+    openssh-client rsync
 
 # Install deployer
 RUN composer global require deployer/deployer:6.4.3
