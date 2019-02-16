@@ -1,5 +1,7 @@
 FROM ubuntu:18.04
 
+ENV DEBIAN_FRONTEND noninteractive
+
 # Insall php and composer
 # openssh-client is added to perform ssh deployment
 RUN apt-get update -y && \
